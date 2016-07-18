@@ -19,5 +19,6 @@ public class Solution
         double f = (char) 1234.15;
         long d = (int) (a + f / c + b);
         System.out.println(d);
+        //test SmartGit
     }
 }
