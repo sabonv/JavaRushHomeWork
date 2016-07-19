@@ -23,26 +23,32 @@ public class Solution
     public static Map<String, Cat> createMap()
     {
         //напишите тут ваш код
+
         Map<String, Cat> map = new HashMap<String, Cat>();
 
         for (int i = 0; i < 10; i++)
         {
+
             map.put("name"+i, new Cat("name"+i));
+
         }
 
         return map;
-
     }
 
     public static Set<Cat> convertMapToSet(Map<String, Cat> map)
     {
         //напишите тут ваш код
-        Set<Cat> set = new HashSet<Cat>();
 
-        for (Map.Entry<String, Cat> temp : map.entrySet()){
-            set.add(temp.getValue());
+        Set<Cat> temp = new HashSet<Cat>();
+
+        for (Map.Entry<String, Cat> par : map.entrySet()){
+
+            temp.add(par.getValue());
+
         }
-        return set;
+
+        return temp;
 
     }
 
